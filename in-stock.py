@@ -25,8 +25,8 @@ page3 = requests.get("https://www.fitnessavenue.ca/amstaff-fitness-df-1162-multi
 page4 = requests.get("https://www.fitnessavenue.ca/heavy-duty-interlocking-foam-mat-12-pack")
 
 #pages = [(item1, page1),(item2, page2),(item3, page3),(item4, page4)]
-pages = [(item1, page1),(item2, page2),(item3, page3)]
-#pages = [(item1, page1),(item2, page2)]
+#pages = [(item1, page1),(item2, page2),(item3, page3)]
+pages = [(item1, page1),(item2, page2)]
 inStock = []
 
 for page in pages:
