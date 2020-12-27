@@ -16,13 +16,13 @@ twilio_num = os.environ['TWILIO_IN-STOCK_NUM']
 
 item1 = "https://www.fitnessavenue.ca/265lbs-cast-iron-grip-standard-weight-plate-set-1-inch"
 item2 = "https://www.fitnessavenue.ca/amstaff-df-1161a-power-squat-rack-with-lat-pull-down-attachment"
-item3 = "https://www.fitnessavenue.ca/amstaff-fitness-df-1162-multi-squat-rack"
+item3 = "https://www.fitnessavenue.ca/amstaff-tr057d-squat-press-rack"
 item4 = "https://www.fitnessavenue.ca/heavy-duty-interlocking-foam-mat-12-pack"
 
-page1 = requests.get("https://www.fitnessavenue.ca/265lbs-cast-iron-grip-standard-weight-plate-set-1-inch")
-page2 = requests.get("https://www.fitnessavenue.ca/amstaff-df-1161a-power-squat-rack-with-lat-pull-down-attachment")
-page3 = requests.get("https://www.fitnessavenue.ca/amstaff-fitness-df-1162-multi-squat-rack")
-page4 = requests.get("https://www.fitnessavenue.ca/heavy-duty-interlocking-foam-mat-12-pack")
+page1 = requests.get(item1)
+page2 = requests.get(item2)
+page3 = requests.get(item3)
+page4 = requests.get(item4)
 
 #pages = [(item1, page1),(item2, page2),(item3, page3),(item4, page4)]
 pages = [(item1, page1),(item2, page2),(item3, page3)]
