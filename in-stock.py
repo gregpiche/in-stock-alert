@@ -54,6 +54,8 @@ elif len(inStock) > 1:
                      from_= twilio_num,
                      to= personal_num
                      )
+else:
+    print("No items are back in stock!")
 
 #print(message.sid)
 #print(message)
