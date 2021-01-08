@@ -15,19 +15,19 @@ personal_num = os.environ['PERSONAL_NUM']
 twilio_num = os.environ['TWILIO_IN-STOCK_NUM']
 
 item1 = "https://www.fitnessavenue.ca/265lbs-cast-iron-grip-standard-weight-plate-set-1-inch"
-#item2 = "https://www.fitnessavenue.ca/amstaff-df-1161a-power-squat-rack-with-lat-pull-down-attachment"
+item2 = "https://fitnessavenue.ca/premium-foam-yoga-roller-6-x-36-black"
 item3 = "https://www.fitnessavenue.ca/amstaff-tr057d-squat-press-rack"
 item4 = "https://fitnessavenue.ca/interlocking-rubber-tile-24-x-24-x-7mm-grey-speckle"
 item5 = "https://fitnessavenue.ca/amstaff-tr310a-squat-stands"
 
 page1 = requests.get(item1)
-#page2 = requests.get(item2)
+page2 = requests.get(item2)
 page3 = requests.get(item3)
 page4 = requests.get(item4)
 page5 = requests.get(item5)
 
 #pages = [(item1, page1),(item2, page2),(item3, page3),(item4, page4)]
-pages = [(item1, page1),(item3, page3), (item4, page4), (item5, page5)]
+pages = [(item1, page1), (item2, page2), (item3, page3), (item4, page4), (item5, page5)]
 #pages = [(item1, page1),(item2, page2)]
 inStock = []
 
@@ -56,6 +56,7 @@ elif len(inStock) > 1:
                      from_= twilio_num,
                      to= personal_num
                      )
+    print(bod)
 else:
     print("No items are back in stock!")
 

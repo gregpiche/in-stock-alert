@@ -56,6 +56,7 @@ elif len(inStock) > 1:
                      from_= twilio_num,
                      to= personal_num
                      )
+    print(bod)
 else:
     print("No items are back in stock!")
 
